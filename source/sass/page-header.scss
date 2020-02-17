@@ -1,0 +1,22 @@
+.page-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  padding-top: 40px;
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__chat {
+    display: flex;
+    justify-content: center;
+  }
+}

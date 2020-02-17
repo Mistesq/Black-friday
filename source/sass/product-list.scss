@@ -1,0 +1,39 @@
+.product-list {
+
+  &__head {
+    display: none;
+  }
+
+  &__more {
+    display: none;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  &__default-cost {
+    font-size: 18px;
+    line-height: 28px;
+    color: $gray;
+    text-decoration: line-through;
+  }
+
+  &__discount-cost {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+    color: $red;
+  }
+
+  &__link {
+    color: $gray;
+
+    &:hover {
+      color: $red;
+      text-decoration: none;
+    }
+  }
+
+}

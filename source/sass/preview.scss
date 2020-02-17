@@ -1,0 +1,59 @@
+.preview {
+  padding-top: 180px;
+
+  background-image: url(../img/background.jpg);
+
+  color: white;
+
+  &__head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    &-box {
+      padding-top: 45px;
+      padding-bottom: 15px;
+      min-height: 205px;
+
+      background-image: url(../img/black_middle.png);
+      background-repeat: repeat-x;
+      background-size: contain;
+
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    font-size: 62px;
+    line-height: 63px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    line-height: 63px;
+    text-transform: uppercase;
+  }
+
+  &__discount {
+    font-size: 62px;
+    line-height: 63px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $red;
+  }
+
+  &__info {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &__category {
+    padding: 20px 0 25px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}

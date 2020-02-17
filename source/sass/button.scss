@@ -1,0 +1,47 @@
+.button {
+  display: inline-block;
+  padding: 15px 40px;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  font-size: 21px;
+  line-height: 22px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+  background-image: url(../img/buy.png);
+  background-position: top;
+  background-size: cover;
+  background-color: $gray;
+  border: none;
+  transition: all 0.07s linear;
+  cursor: pointer;
+
+
+  &:hover {
+    background-position: bottom;
+    color: white;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--category {
+    background-image: none;
+    background-color: white;
+
+    color: $gray-btn;
+
+    &:hover {
+      background-image: url(../img/buy.png);
+      background-position: top;
+      color: white;
+    }
+  }
+
+
+}
