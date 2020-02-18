@@ -1,0 +1,27 @@
+.submenu-list {
+  @include reset-list;
+  background-color: white;
+
+  &__item {
+    font-size: 26px;
+    line-height: 46px;
+    border-top: 1px solid $border-submenu;
+
+    &:last-child {
+      border-bottom: 1px solid $border-submenu;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 25px 10px 30px 10px;
+    
+    color: $gray;
+    text-decoration: none;
+
+    &:hover {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+}

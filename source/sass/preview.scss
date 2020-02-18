@@ -11,8 +11,11 @@
     margin-bottom: 35px;
 
     &-box {
-      padding-top: 45px;
-      padding-bottom: 15px;
+      position: relative;
+
+      padding-top: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
       min-height: 205px;
 
       background-image: url(../img/black_middle.png);
@@ -20,11 +23,42 @@
       background-size: contain;
 
       text-align: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -49px;
+
+        display: block;
+        width: 50px;
+        height: 100%;
+
+        background-image: url(../img/black_left.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -69px;
+
+        display: block;
+        width: 70px;
+        height: 100%;
+
+        background-image: url(../img/black_right.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
     }
   }
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 39px;
 
     font-size: 62px;
     line-height: 63px;
@@ -53,7 +87,6 @@
   }
 
   &__category {
-    padding: 20px 0 25px 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
 }

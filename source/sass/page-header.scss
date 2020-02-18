@@ -7,7 +7,15 @@
 
   &__menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  &__submenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow-y: scroll;
   }
 
   &__logo {
@@ -17,6 +25,6 @@
 
   &__chat {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
