@@ -7,3 +7,16 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
   submenu.classList.toggle("submenu--active");
 });
+
+var time = 1582231568;
+
+ // Set up FlipDown
+ var flipdown = new FlipDown(time)
+
+   // Start the countdown
+   .start()
+
+   // Do something when the countdown ends
+   .ifEnded(() => {
+     console.log('The countdown has ended!');
+   });

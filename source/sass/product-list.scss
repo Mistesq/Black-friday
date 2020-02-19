@@ -4,6 +4,20 @@
 
   &__head {
     display: none;
+
+    .product-list__title {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: bold;
+    }
+
+    .product-list__info {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  &__body {
   }
 
   &__more {
@@ -34,6 +48,8 @@
     margin-bottom: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 
     background-color: white;
     border: 1px solid $border-gray;
@@ -44,6 +60,7 @@
 
     font-size: 22px;
     line-height: 28px;
+    color: #333333;
   }
 
   &__cost {
@@ -70,6 +87,82 @@
     &:hover {
       color: $red;
       text-decoration: none;
+    }
+  }
+
+}
+
+@media (min-width: $laptop-width) {
+  .product-list {
+
+    &__item {
+      padding-top: 22px;
+      margin-left: 20px;
+
+      &:last-child {
+        margin-right: 20px;
+      }
+    }
+
+    &__head {
+      display: flex;
+      flex-direction: column;
+      min-height: 50%;
+      padding-bottom: 25px;
+    }
+
+    &__body {
+      padding-top: 25px;
+      border-top: 1px solid $border-gray;
+    }
+
+    &__more {
+      margin-top: 30px;
+      display: block;
+
+      &-link {
+        position: relative;
+
+        display: inline-block;
+
+        font-size: 12px;
+        line-height: 21px;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          right: -26px;
+
+          display: block;
+          width: 16px;
+          height: 16px;
+
+          background-image: url(../img/see_more.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: $red;
+
+          &::after {
+            background-position: bottom;
+          }
+
+        }
+      }
+    }
+
+    &__title {
+      display: block;
+
+      &--right {
+        display: none;
+      }
     }
   }
 

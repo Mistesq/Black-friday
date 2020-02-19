@@ -57,6 +57,10 @@
     }
   }
 
+  &__timer {
+    margin-bottom: 90px;
+  }
+
   &__title {
     margin-bottom: 39px;
 
@@ -73,6 +77,8 @@
   }
 
   &__discount {
+    margin-bottom: 120px;
+
     font-size: 62px;
     line-height: 63px;
     text-transform: uppercase;
@@ -81,6 +87,8 @@
   }
 
   &__info {
+    margin-bottom: 80px;
+    
     font-size: 15px;
     line-height: 20px;
     text-align: center;
