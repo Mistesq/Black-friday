@@ -3,8 +3,8 @@
   background-color: white;
 
   &__item {
-    font-size: 26px;
-    line-height: 46px;
+    font-size: 22px;
+    line-height: 40px;
     border-top: 1px solid $border-submenu;
 
     &:last-child {
@@ -13,9 +13,11 @@
   }
 
   &__link {
-    display: block;
-    padding: 25px 10px 30px 10px;
-    
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 25px 10px;
+    width: 100%;
+
     color: $gray;
     text-decoration: none;
 
@@ -23,5 +25,30 @@
       color: $gray;
       text-decoration: none;
     }
+
+    &::after {
+      content: "";
+      margin-left: auto;
+      display: block;
+      width: 12px;
+      height: 20px;
+
+      background-image: url(../img/menu_arrow.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: $mobile-w-width) {
+  .submenu-list {
+    &__item {
+      font-size: 26px;
+      line-height: 46px;
+    }
+
+    &__link {
+        padding: 25px 10px 30px 10px;
+      }
   }
 }

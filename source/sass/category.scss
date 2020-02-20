@@ -7,11 +7,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
   }
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 
     text-align: center;
     font-size: 32px;
@@ -39,10 +41,26 @@
   }
 
   &__list {
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
 
   &--gray {
     background-color: $section-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .category {
+    &__head {
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    &__list {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 }

@@ -27,6 +27,7 @@
   &__left {
     display: flex;
     align-items: stretch;
+    margin-bottom: 30px;
   }
 
   &__box-img {
@@ -60,6 +61,7 @@
 
     font-size: 22px;
     line-height: 28px;
+    font-weight: bold;
     color: #333333;
   }
 
@@ -90,6 +92,15 @@
     }
   }
 
+}
+
+@media (min-width: $tablet-s-width) {
+  .product-list {
+    &__left {
+      margin-bottom: 0;
+    }
+
+  }
 }
 
 @media (min-width: $laptop-width) {
