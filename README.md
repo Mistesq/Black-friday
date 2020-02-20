@@ -1,4 +1,4 @@
-# petProj
+# Black-friday
 - [ DEMO ](https://mistesq.github.io/Black-friday/)
 
 ## Getting started guide
